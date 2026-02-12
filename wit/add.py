@@ -22,21 +22,22 @@ def add_to_stage(file_name):
 
 #פונקציה שמוסיפה קובץ מסוי
 def add_file(file_name):
-    if is_file_changed(file_name):
-        file_path = file_name
-        file_name_temp = Path(file_path).name
-        dest_path = f'.wit/staged_file/{file_name_temp}'
-        # מחיקת הנתיב הקיים אם קיים
-        if os.path.exists(dest_path):
-            if os.path.isdir(dest_path):
-                shutil.rmtree(dest_path)
-            else:
-                os.remove(dest_path)
-        # העתקת התיקייה או הקובץ
-        if os.path.isdir(file_name):
-            shutil.copytree(file_name, dest_path, dirs_exist_ok=True)
+    if not is_file_changed(file_name):
+        return
+    file_path = file_name
+    file_name_temp = Path(file_path).name
+    dest_path = f'.wit/staged_file/{file_name_temp}'
+    # מחיקת הנתיב הקיים אם קיים
+    if os.path.exists(dest_path):
+        if os.path.isdir(dest_path):
+            shutil.rmtree(dest_path)
         else:
-            shutil.copy(file_name, dest_path)
+            os.remove(dest_path)
+    # העתקת התיקייה או הקובץ
+    if os.path.isdir(file_name):
+        shutil.copytree(file_name, dest_path, dirs_exist_ok=True)
+    else:
+        shutil.copy(file_name, dest_path)
 
 
 #האם היה שינויים
