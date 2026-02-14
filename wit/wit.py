@@ -2,6 +2,8 @@
 
 import init as init_module
 import add as add_module
+import status as status_module
+
 
 
 def commits():
@@ -9,7 +11,7 @@ def commits():
 #שולח לדף COMMIT
 
 def status():
-    pass
+    status_module.show_status()
     #שולח לדף STATUS
 
 
