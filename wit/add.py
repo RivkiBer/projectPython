@@ -41,7 +41,7 @@ def add_file(file_name):
 
 #האם היה שינויים
 def is_file_changed(file_name):
-    if check_name_in_file(file_name,'.wit/.witignor.txt'):
+    if check_name_in_file(file_name,'.wit/.witignore.txt'):
       print("the file is in the .witignore file")
       return False
     staged_path = os.path.join('.wit', 'staged_file', file_name)
