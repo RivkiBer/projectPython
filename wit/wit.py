@@ -11,7 +11,7 @@ def commits():
 #שולח לדף COMMIT
 
 def status():
-    pass
+    status_module.show_status()
     #שולח לדף STATUS
 
 

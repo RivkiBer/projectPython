@@ -14,6 +14,6 @@ def create_init(path2):
     with open(f"{path2}/.wit/commits/head.txt", "w") as file:
         file.write("")
 
-    with open(f"{path2}/.wit/.witignor.txt", "w") as file:
+    with open(f"{path}/.wit/.witignore.txt", "w") as file:
         file.write("")
     print("the initial succses")
