@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ### פרטים ID וכו ע"י פונקציות נוספות ומכניסה תיקייה חדשה עם הקבצים עם השינויים"#
 # #יוצR HEAD שמצביע על הCOMMIT האחרון המשתנה יהיה מצביע על כל השמות
 # # -*- coding: utf-8 -*-
@@ -7,6 +8,12 @@
 # import uuid
 #
 #
+=======
+ ## פרטים ID וכו ע"י פונקציות נוספות ומכניסה תיקייה חדשה עם הקבצים עם השינויים"#
+# #יוצR HEAD שמצביע על הCOMMIT האחרון המשתנה יהיה מצביע על כל השמות
+#
+#vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+>>>>>>> main
 # def create_commit(message):
 #     if not os.path.exists('.wit/staged_file'):
 #         print("you need to do add Command before commit and chek if you did git init")
@@ -41,7 +48,11 @@ def create_commit(message):
     commit_id = get_commit_id()
     print(f"Commit ID: {commit_id}")
 
+<<<<<<< HEAD
     commit_path = f".wit/commits/{commit_id}"
+=======
+    commit_path: str = f".wit/commits/{commit_id}"
+>>>>>>> main
     os.makedirs(f"{commit_path}/files", exist_ok=True)
 
     source = '.wit/staged_file'
@@ -56,6 +67,11 @@ def create_commit(message):
     with open(f"{commit_path}/details.txt", "w", encoding="utf-8") as details_file:
         details_file.write(f"Date: {datetime.datetime.now()}\n")
         details_file.write(f"Message: {message}\n")
+<<<<<<< HEAD
+=======
+    with open(".wit/commits/head.txt", "w", encoding="utf-8") as details_file:
+        details_file.write(os.path.basename(commit_path))
+>>>>>>> main
 
 
 def get_commit_id():

@@ -4,6 +4,7 @@ import shutil
 import os
 from os.path import exists
 from pathlib import Path
+<<<<<<< HEAD
 
 
 
@@ -11,10 +12,16 @@ def add_to_stage(file_name=None, staged_path='.wit/staged_file'):
     if file_name is None:
         print("No file specified to add.")
         return
+=======
+# פונקציה שבודקת את תיקיית staged_file ומכניסה לשם את כל הקבצים ששונו עם כל הבדיקות
+def add_to_stage(file_name, staged_path='.wit/staged_file'):
+    print(file_name)
+>>>>>>> main
     if not os.path.exists('.wit'):
         print("You need to initialize the repository first")
         return
 
+<<<<<<< HEAD
 
     src = r'C:\Users\PC\Desktop\projectPython\wit'
     dest = staged_path
@@ -46,17 +53,32 @@ def add_to_stage(file_name=None, staged_path='.wit/staged_file'):
         # אם מדובר בקובץ ספציפי
         add_file(file_name, staged_path)
     print("successfully added to stage")
+=======
+    if os.path.basename('.'):
+        print("gggggggggggggggggg")
+        src = r'C:\שנה ב תכנות\פייתון\wit_project\projectPython\wit'
+        dest = staged_path
+        skip = ['.wit']
+        shutil.copytree(src, dest, ignore=shutil.ignore_patterns(*skip), dirs_exist_ok=True)
+    else:
+        print("כקעככככככ")
+        add_file(file_name, staged_path)
+
+>>>>>>> main
 
 # פונקציה שמוסיפה קובץ מסויים
 def add_file(file_name, staged_path='.wit/staged_file'):
     if not is_file_changed(file_name):
         return
+<<<<<<< HEAD
 
     # התעלמות מקבצים שנמצאים ב-.witignore.txt
     if check_name_in_file(file_name, '.wit/.witignore.txt'):
         print(f"The file '{file_name}' is in the .witignore file. Skipping.")
         return
 
+=======
+>>>>>>> main
     file_path = file_name
     file_name_temp = Path(file_path).name
     dest_path = f"{staged_path}/{file_name_temp}"
@@ -77,6 +99,7 @@ def add_file(file_name, staged_path='.wit/staged_file'):
 
 # האם היה שינויים
 def is_file_changed(file_name):
+<<<<<<< HEAD
     if check_name_in_file(file_name, '.wit/.witignore.txt'):
         return False
 
@@ -94,6 +117,21 @@ def is_file_changed(file_name):
                 if path is not None:
                     if if_files_equal(path, file_name):
                         return False
+=======
+    if check_name_in_file(file_name, '.wit/.witignor.txt'):
+        print("The file is in the .witignore file")
+        return False
+    if os.path.exists(f'.wit/staged_file/{file_name}'):
+        return not if_files_equal(file_name, '.wit/staged_file/file_name')
+
+    with open('.wit/commits/head.txt', 'r') as head_file:
+        head_commit = head_file.read().strip()
+        if exists(head_commit):
+            path = find_file_in_folder(file_name, f'.wit/commits/{head_commit}')
+            if path is not None:
+                if if_files_equal(path, file_name):
+                    return False
+>>>>>>> main
     return True
 
 
@@ -111,8 +149,11 @@ def if_files_equal(file1, file2):
 
 # בודק אם שם הקובץ קיים בקובץ .witignore
 def check_name_in_file(name_to_find, path):
+<<<<<<< HEAD
     if not os.path.exists(path):
         return False
+=======
+>>>>>>> main
     with open(f'{path}', 'r', encoding='utf-8') as file:
         for line in file:
             if name_to_find.strip() == line.strip():

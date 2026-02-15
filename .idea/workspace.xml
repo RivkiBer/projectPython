@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f7235e3-2278-45ec-8c06-7c8bc549bb56" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/wit/.wit/.witignore.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/commits/head.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/wit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/add.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/checkout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/commit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/details.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/wit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/add.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/checkout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/commit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/files_func.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/init.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/wit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files_func.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/init.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/wit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/checkout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/commit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/commit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/wit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/wit.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="39itKjdpeS7ZanHvTmCTFAxG7z0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.add.executor": "Run",
+    "Python.checkout.executor": "Run",
+    "Python.wit.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "chany2",
+    "last_opened_file_path": "C:/שנה ב תכנות/פייתון/wit_project/projectPython/wit",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-337b0a7a993a-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.19416.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f7235e3-2278-45ec-8c06-7c8bc549bb56" name="Changes" comment="" />
+      <created>1771190658394</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771190658394</updated>
+    </task>
+    <servers />
+  </component>
+</project>
