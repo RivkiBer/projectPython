@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
+import sys
 import init as init_module
 import add as add_module
+import commit as commit_module
 
 
 def commits():
-    pass
+    commit_module.create_commit(r"C:\שנה ב תכנות\פייתון\wit_project\projectPython\wit")
 #שולח לדף COMMIT
 
 def status():
@@ -19,13 +21,13 @@ def checkout():
 
 
 def init():
-    init_module.create_init("Z:\יד תשפו\רובינסקי חנה\python\PythonProject\projectPython\wit")
+    init_module.create_init(r"C:\שנה ב תכנות\פייתון\wit_project\projectPython\wit")
     #שולח לדף INIT
 
 
 
 def add():
-    add_module.add_to_stage("Z:\יד תשפו\רובינסקי חנה\python\PythonProject\projectPython\wit\\add.py")
+    add_module.add_to_stage(r"C:\שנה ב תכנות\פייתון\wit_project\projectPython\wit\.")
 
 
-add()
+commits()
