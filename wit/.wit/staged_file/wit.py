@@ -32,4 +32,4 @@ def add():
     add_module.add_to_stage(r"C:\שנה ב תכנות\פייתון\wit_project\projectPython\wit\.")
 
 
-add()
+status()

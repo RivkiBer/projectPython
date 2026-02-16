@@ -7,7 +7,7 @@ from status import show_status
 import checkout as checkout_module
 
 def commits():
-    commit_module.create_commit(r"C:\שנה ב תכנות\פייתון\wit_project\projectPython\wit")
+    commit_module.create_commit(r"C:\projectPython\wit")
 
 
 #שולח לדף COMMIT
@@ -18,18 +18,18 @@ def status():
 
 
 def checkout():
-    checkout_module.move_checkout('a588ac1e',r"C:\שנה ב תכנות\פייתון\wit_project\projectPython\wit")
+    checkout_module.move_checkout('a588ac1e',r"C:\projectPython\wit\.")
     #שולח לדף CHECKOUT
 
 
 
 def init():
-    init_module.create_init(r"C:\שנה ב תכנות\פייתון\wit_project\projectPython\wit")
+    init_module.create_init(r"C:\projectPython\wit")
     #שולח לדף INIT
 
 ###
 def add():
-    add_module.add_to_stage(r"C:\שנה ב תכנות\פייתון\wit_project\projectPython\wit\.")
+    add_module.add_to_stage(r"C:\projectPython\wit\.")
 
 
-status()
+add()

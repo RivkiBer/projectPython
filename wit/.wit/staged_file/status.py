@@ -17,6 +17,14 @@ def show_status():
             ignored = [line.strip() for line in f]
 
     def is_ignored(path):
+        # קבצים או תיקיות שצריך להתעלם מהם באופן אוטומטי
+        ignored_paths = ['venv', '__pycache__', '.DS_Store', 'Thumbs.db']
+
+        # אם הקובץ נמצא בתיקיות שצריך להתעלם מהן, תחזור True
+        if any(path.startswith(i) for i in ignored_paths):
+            return True
+
+        # אם הקובץ מופיע ב-witignore, תחזור True
         return any(path.startswith(i) for i in ignored)
 
     # קבלת הקומיט האחרון

@@ -4,6 +4,9 @@ import shutil
 import os
 from os.path import exists
 from pathlib import Path
+import files_func
+
+
 # פונקציה שבודקת את תיקיית staged_file ומכניסה לשם את כל הקבצים ששונו עם כל הבדיקות
 def add_to_stage(file_name, staged_path='.wit/staged_file'):
     print(file_name)
@@ -12,13 +15,13 @@ def add_to_stage(file_name, staged_path='.wit/staged_file'):
         return
 
     if os.path.basename('.'):
-        print("gggggggggggggggggg")
         src = r'C:\שנה ב תכנות\פייתון\wit_project\projectPython\wit'
         dest = staged_path
         skip = ['.wit']
-        shutil.copytree(src, dest, ignore=shutil.ignore_patterns(*skip), dirs_exist_ok=True)
+        #שולח לתיקייה שמעתיקה את הקבצים בפרויקט לתוך STAGED_FILE
+        files_func.copy_files(src, dest, skip)
     else:
-        print("כקעככככככ")
+        #פונקציה שמוסיפה קובץ
         add_file(file_name, staged_path)
 
 
@@ -29,19 +32,8 @@ def add_file(file_name, staged_path='.wit/staged_file'):
     file_path = file_name
     file_name_temp = Path(file_path).name
     dest_path = f"{staged_path}/{file_name_temp}"
-
-    # מחיקת הנתיב הקיים אם קיים
-    if os.path.exists(dest_path):
-        if os.path.isdir(dest_path):
-            shutil.rmtree(dest_path)
-        else:
-            os.remove(dest_path)
-
-    # העתקת התיקייה או הקובץ
-    if os.path.isdir(file_name):
-        shutil.copytree(file_name, dest_path, dirs_exist_ok=True)
-    else:
-        shutil.copy(file_name, dest_path)
+    files_func.remove_path(dest_path)
+    files_func.copy_files(file_name, dest_path)
 
 
 # האם היה שינויים
