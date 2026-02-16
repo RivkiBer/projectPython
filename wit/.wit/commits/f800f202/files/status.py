@@ -1,51 +1,24 @@
-<<<<<<< HEAD
 # מדפיס את הSTATUS הנוכחי ע"י קבלה מהCOMMIT ו-STAGED
-=======
-
-#מדפיס את הSTATUS הנדוכחי ע"י קבלה מהCOMMIT ןה STAGED
->>>>>>> main
 import os
 from os.path import join, exists, relpath
 from add import if_files_equal
 
-<<<<<<< HEAD
 
-=======
->>>>>>> main
 def show_status():
     staged_dir = join('.wit', 'staged_file')
     commits_dir = join('.wit', 'commits')
     head_file = join(commits_dir, 'head.txt')
-<<<<<<< HEAD
     witignore_file = join('.wit', '.witignore.txt')  # ודא סיומת .txt אם זה הקובץ שלך
-=======
-    witignore_file = join('.wit', '.witignore')
->>>>>>> main
 
     # קבצים להתעלם מהם
     ignored = []
     if exists(witignore_file):
         with open(witignore_file, 'r', encoding='utf-8') as f:
-<<<<<<< HEAD
             ignored = [line.strip() for line in f if line.strip()]
 
     def is_ignored(path):
         # התעלמות מוחלטת מקבצים שמופיעים ב-witignore
         return any(path == i or path.startswith(i + os.sep) for i in ignored)
-=======
-            ignored = [line.strip() for line in f]
-
-    def is_ignored(path):
-        # קבצים או תיקיות שצריך להתעלם מהם באופן אוטומטי
-        ignored_paths = ['venv', '__pycache__', '.DS_Store', 'Thumbs.db']
-
-        # אם הקובץ נמצא בתיקיות שצריך להתעלם מהן, תחזור True
-        if any(path.startswith(i) for i in ignored_paths):
-            return True
-
-        # אם הקובץ מופיע ב-witignore, תחזור True
-        return any(path.startswith(i) for i in ignored)
->>>>>>> main
 
     # קבלת הקומיט האחרון
     last_commit = None
@@ -62,19 +35,11 @@ def show_status():
     # סורק את הקבצים בספריית הפרויקט
     for root, _, files in os.walk('.'):
         for f in files:
-<<<<<<< HEAD
             path = join(root, f)
             rel_path = relpath(path, '.')
 
             # התעלמות מקבצים שמתחילים ב-.wit או שמופיעים ב-witignore
             if rel_path.startswith('.wit') or is_ignored(rel_path):
-=======
-            if f.startswith('.wit'):
-                continue
-            path = join(root, f)
-            rel_path = relpath(path, '.')
-            if is_ignored(rel_path):
->>>>>>> main
                 continue
 
             staged_file_path = join(staged_dir, rel_path)

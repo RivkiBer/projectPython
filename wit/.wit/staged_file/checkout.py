@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+#הפונקציה בודקת האם קיים הCOMMIT הנתון עם הפרטים שלו ואם כן מוחקת את הבאים ושמה את הראש על הCOMMIT הנוכחי
+=======
 import os
 import shutil
 
@@ -38,3 +41,4 @@ def move_checkout(commit_name,path2):
 
 
 
+>>>>>>> main
