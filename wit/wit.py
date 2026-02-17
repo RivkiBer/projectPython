@@ -49,10 +49,12 @@
 # -*- coding: utf-8 -*-
 import click
 import os
-
 import init as init_module
 import add as add_module
 import commit as commit_module
+import status as status_module
+import checkout as checkout_module
+
 # ... וכן הלאה
 @click.group()
 def cli():
@@ -84,15 +86,15 @@ def status():
     """הצגת סטטוס הקבצים"""
     status_module.show_status()
 
+
+# ... (שאר הקוד)
+
 @cli.command()
 @click.argument('commit_id')
 def checkout(commit_id):
     """חזרה לקומיט מסוים"""
     click.echo(f"Checking out to commit {commit_id}...")
-    # כאן תקרא לפונקציה מ-checkout_module
-
-# הערה: כשמשתמשים ב-@cli.command() אין צורך להוסיף cli.add_command(init) בסוף,
-# ה-decorator כבר עושה את זה אוטומטית. אפשר למחוק את השורות האלו.
-
+    # קריאה לפונקציה מהמודול החיצוני, לא לעצמנו!
+    checkout_module.checkout(commit_id)
 if __name__ == "__main__":
     cli()

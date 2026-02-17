@@ -3,6 +3,7 @@ import shutil
 import datetime
 import uuid
 import files_func
+import click
 
 
 def create_commit(message):
@@ -11,7 +12,7 @@ def create_commit(message):
 
     # 1. בדיקה אם התיקייה קיימת ויש בה קבצים
     if not os.path.exists(staged_path) or not os.listdir(staged_path):
-        print("Error: Nothing to commit. Use 'add' first.")
+        click.echo("Error: Nothing to commit. Use 'add' first.")
         return
 
     # 2. בדיקה האם היו שינויים מהקומיט האחרון (דרישת חובה בפרויקט)
@@ -22,6 +23,7 @@ def create_commit(message):
         if last_commit_id:  # אם זה לא הקומיט הראשון
             last_commit_files = f".wit/commits/{last_commit_id}/files"
             # השוואה בין מה שיש עכשיו בסטייג' למה שיש בקומיט האחרון
+
             if files_func.if_folders_equals(staged_path, last_commit_files):
                 print("No changes detected since last commit. Commit aborted.")
                 return
@@ -49,7 +51,7 @@ def create_commit(message):
     # יצירה מחדש של התיקייה הריקה כדי שה-add הבא לא יכשל
     os.makedirs(staged_path, exist_ok=True)
 
-    print(f"Successfully created commit: {commit_id}")
+    click.echo(f"Successfully created commit: {commit_id}")
 
 
 def get_commit_id():

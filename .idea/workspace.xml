@@ -5,53 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f7235e3-2278-45ec-8c06-7c8bc549bb56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/wit/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/wit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projectPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectPython.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/.witignore.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f800f202/details.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f800f202/files/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f800f202/files/status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/head.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/add.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/checkout.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/commit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/details.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/add.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/checkout.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/commit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/files_func.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/init.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/wit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files_func.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/init.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/wit.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/add.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/add.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/checkout.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/commit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/commit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/add.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/checkout.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/commit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/files_func.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/init.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/wit.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/files_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/files_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/wit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/wit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/python/projectPython" value="39itKjdpeS7ZanHvTmCTFAxG7z0" />
+    </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -84,22 +53,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.add.executor": "Run",
-    "Python.checkout.executor": "Run",
-    "Python.commit.executor": "Run",
-    "Python.setup.executor": "Run",
-    "Python.status.executor": "Run",
-    "Python.wit.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/python/projectPython",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.add.executor&quot;: &quot;Run&quot;,
+    &quot;Python.checkout.executor&quot;: &quot;Run&quot;,
+    &quot;Python.commit.executor&quot;: &quot;Run&quot;,
+    &quot;Python.setup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.status.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wit.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;chany2&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/python/projectPython&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="projectPython" />
@@ -142,5 +111,13 @@
       <updated>1771190658394</updated>
     </task>
     <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

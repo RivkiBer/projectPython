@@ -80,44 +80,69 @@ def find_file_in_folder(file_name, path):
         return None
 
 
-
-
 def is_file_changed(path_file):
-    """
-    בודק אם קובץ השתנה מאז שנוסף לסטייג'ינג או הקומיט האחרון.
-    """
     try:
-        file_name = os.path.basename(path_file)
+        # שימוש בנתיב יחסי מהפרויקט
+        rel_path = os.path.relpath(path_file, os.getcwd())
 
-        # התעלמות מקבצים שנמצאים ב-.witignore
-        if check_name_in_file(file_name, '.wit/.witignore.txt'):
-            return False
-
-        staged_file_path = os.path.join('.wit', 'staged_file', file_name)
+        # בדיקה בסטייג' ששומר על המבנה
+        staged_file_path = os.path.join('.wit', 'staged_file', rel_path)
 
         if os.path.exists(staged_file_path):
-            # אם קיים כבר קובץ בסטייג'ינג, נוודא שהוא שונה
             if os.path.isdir(path_file):
                 return not if_folders_equals(path_file, staged_file_path)
-            else:
-                return not if_files_equal(path_file, staged_file_path)
+            return not if_files_equal(path_file, staged_file_path)
 
-        # אם אין קובץ בסטייג'ינג, נבדוק אם יש אותו בקומיט האחרון
+        # בדיקה מול HEAD
         head_path = '.wit/commits/head.txt'
         if os.path.exists(head_path):
-            with open(head_path, 'r', encoding='utf-8') as head_file:
-                head_commit = head_file.read().strip()
-                commit_path = f'.wit/commits/{head_commit}'
-                if os.path.exists(commit_path):
-                    path = find_file_in_folder(file_name, commit_path)
-                    if path is not None:
-                        if os.path.isdir(path):
-                            return not if_folders_equals(path, path_file)
-                        elif if_files_equal(path, path_file):
-                            return False
+            with open(head_path, 'r', encoding='utf-8') as f:
+                head_id = f.read().strip()
+                commit_file_path = os.path.join('.wit', 'commits', head_id, 'files', rel_path)
+                if os.path.exists(commit_file_path):
+                    if os.path.isdir(path_file):
+                        return not if_folders_equals(path_file, commit_file_path)
+                    return not if_files_equal(path_file, commit_file_path)
+        return True
+    except:
         return True
 
-    except Exception as e:
-        raise Exception(f"נפלה שגיאה במהלך בדיקת שינויים לקובץ {path_file}: {e}")
+# def is_file_changed(path_file):
+#     """
+#     בודק אם קובץ השתנה מאז שנוסף לסטייג'ינג או הקומיט האחרון.
+#     """
+#     try:
+#         file_name = os.path.basename(path_file)
+#
+#         # התעלמות מקבצים שנמצאים ב-.witignore
+#         if check_name_in_file(file_name, '.wit/.witignore.txt'):
+#             return False
+#
+#         staged_file_path = os.path.join('.wit', 'staged_file', file_name)
+#
+#         if os.path.exists(staged_file_path):
+#             # אם קיים כבר קובץ בסטייג'ינג, נוודא שהוא שונה
+#             if os.path.isdir(path_file):
+#                 return not if_folders_equals(path_file, staged_file_path)
+#             else:
+#                 return not if_files_equal(path_file, staged_file_path)
+#
+#         # אם אין קובץ בסטייג'ינג, נבדוק אם יש אותו בקומיט האחרון
+#         head_path = '.wit/commits/head.txt'
+#         if os.path.exists(head_path):
+#             with open(head_path, 'r', encoding='utf-8') as head_file:
+#                 head_commit = head_file.read().strip()
+#                 commit_path = f'.wit/commits/{head_commit}'
+#                 if os.path.exists(commit_path):
+#                     path = find_file_in_folder(file_name, commit_path)
+#                     if path is not None:
+#                         if os.path.isdir(path):
+#                             return not if_folders_equals(path, path_file)
+#                         elif if_files_equal(path, path_file):
+#                             return False
+#         return True
+#
+#     except Exception as e:
+#         raise Exception(f"נפלה שגיאה במהלך בדיקת שינויים לקובץ {path_file}: {e}")
 
 
