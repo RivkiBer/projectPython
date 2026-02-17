@@ -1,47 +1,29 @@
 # -*- coding: utf-8 -*-
 import click
-import init as init_module
-import add as add_module
-import commit as commit_module
-import status as status_module
+import init, add, commit, status
 
 @click.group()
 def cli():
-    """WIT - מערכת ניהול גרסאות פשוטה"""
+    """WIT - Simple Version Control System"""
     pass
 
 @cli.command()
-def init():
-    """אתחול ריפוזיטורי"""
-    init_module.create_init(r"C:\Users\PC\Desktop\projectPython\wit")
-
-@click.command()
-@click.argument('file_name')
-def add(file_name):
-    """הוספת קבצים ל-stage"""
-    add_module.add_to_stage(file_name)
+def init_cmd():
+    init.create_init()
 
 @cli.command()
-@click.argument('message')
-def commit(message):
-    """יצירת commit חדש עם הודעה"""
-    commit_module.create_commit(message)
+@click.argument('path')
+def add_cmd(path):
+    add.add_to_stage(path)
 
 @cli.command()
-def status():
-    """הצגת סטטוס הקבצים"""
-    status_module.show_status()
+@click.option('-m', '--message', required=True, help='Commit message')
+def commit_cmd(message):
+    commit.create_commit(message)
 
 @cli.command()
-@click.argument('commit_id')
-def checkout(commit_id):
-    """חזרה לקומיט מסוים"""
-    print(f"Checkout ל-commit {commit_id}")
-    # כאן אפשר לקרוא לפונקציה המתאימה שלך
-cli.add_command(init)
-cli.add_command(add)
-cli.add_command(commit)
-cli.add_command(status)
-cli.add_command(checkout)
+def status_cmd():
+    status.show_status()
+
 if __name__ == "__main__":
     cli()

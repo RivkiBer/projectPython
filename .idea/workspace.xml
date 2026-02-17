@@ -5,55 +5,187 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f7235e3-2278-45ec-8c06-7c8bc549bb56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/wit/.wit/.witignore.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/commits/head.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/wit.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/add.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/checkout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/commit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/details.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/wit.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/add.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/checkout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/commit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/files_func.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/init.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files/wit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files_func.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/init.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/staged_file/wit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/checkout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projectPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectPython.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/.witignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/.witignore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/0568773f/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/a940397e/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/bb23c8d4/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/c48fd66e/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/cebeb82f/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/e0fb7dfe/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f4a1f1f1/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f800f202/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f800f202/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f800f202/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/head.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/commits/head.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/add.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/checkout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/commit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/commit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/files_func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/wit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/wit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/add.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/add.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/commit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/commit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/files_func.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/wit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/wit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/PC/Desktop/projectPython" value="39itKjdpeS7ZanHvTmCTFAxG7z0" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,15 +205,20 @@
     "Python.checkout.executor": "Run",
     "Python.wit.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "chany2",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "new-branch-name",
+    "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/שנה ב תכנות/פייתון/wit_project/projectPython/wit",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-337b0a7a993a-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.19416.19" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
       </set>
     </attachedChunks>
   </component>
@@ -95,5 +232,13 @@
       <updated>1771190658394</updated>
     </task>
     <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

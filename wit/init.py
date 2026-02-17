@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 import os
+from files_func import WIT_DIR, STAGED_DIR, COMMITS_DIR, HEAD_FILE, WIT_IGNORE
 
 
-def create_init(path):
-    print(path)
-    if os.path.exists('.wit'):
-        print(os.path)
-        print("you already do init")
+def create_init():
+    if os.path.exists(WIT_DIR):
+        print("Repository already initialized.")
         return
 
-    os.makedirs(f"{path}/.wit/staged_file", exist_ok=True)
-    os.makedirs(f"{path}/.wit/commits", exist_ok=True)
-    with open(f"{path}/.wit/commits/head.txt", "w") as file:
-        file.write("")
+    os.makedirs(STAGED_DIR, exist_ok=True)
+    os.makedirs(COMMITS_DIR, exist_ok=True)
 
-    with open(f"{path2}/.wit/.witignore.txt", "w") as file:
-        file.write("__pycache__\n")
-        file.write("*.pyc\n")
-        file.write(".idea\n")
-        file.write("init.pyc\n")
-    print("the initial succses")
+    with open(HEAD_FILE, "w", encoding="utf-8") as f:
+        f.write("")
+
+    with open(WIT_IGNORE, "w", encoding="utf-8") as f:
+        f.write(".idea\n.vscode\n.gitignore\n__pycache__\ndetails.txt\ninit.pyc\n")
+
+
+
+    print("Initialized succseed.")

@@ -1,66 +1,53 @@
-# מדפיס את הSTATUS הנוכחי ע"י קבלה מהCOMMIT ו-STAGED
+# -*- coding: utf-8 -*-
 import os
-from os.path import join, exists, relpath
-from add import if_files_equal
+from files_func import (
+    WIT_DIR, STAGED_DIR, COMMITS_DIR, BASE_PATH,
+    get_head_id, get_ignored_list, compare_files, is_wit_initialized
+)
 
 
 def show_status():
-    staged_dir = join('.wit', 'staged_file')
-    commits_dir = join('.wit', 'commits')
-    head_file = join(commits_dir, 'head.txt')
-    witignore_file = join('.wit', '.witignore.txt')  # ודא סיומת .txt אם זה הקובץ שלך
+    if not is_wit_initialized():
+        print("Not a wit repository.")
+        return
 
-    # קבצים להתעלם מהם
-    ignored = []
-    if exists(witignore_file):
-        with open(witignore_file, 'r', encoding='utf-8') as f:
-            ignored = [line.strip() for line in f if line.strip()]
-
-    def is_ignored(path):
-        # התעלמות מוחלטת מקבצים שמופיעים ב-witignore
-        return any(path == i or path.startswith(i + os.sep) for i in ignored)
-
-    # קבלת הקומיט האחרון
-    last_commit = None
-    if exists(head_file):
-        with open(head_file, 'r', encoding='utf-8') as f:
-            c = f.read().strip()
-            if c:
-                last_commit = join(commits_dir, c)
+    ignored = get_ignored_list()
+    head_id = get_head_id()
+    commit_files_path = os.path.join(COMMITS_DIR, head_id, "files") if head_id else None
 
     staged_changes = []
     modified_not_staged = []
     untracked_files = []
 
-    # סורק את הקבצים בספריית הפרויקט
-    for root, _, files in os.walk('.'):
-        for f in files:
-            path = join(root, f)
-            rel_path = relpath(path, '.')
+    for root, dirs, files in os.walk(BASE_PATH):
+        dirs[:] = [d for d in dirs if d not in ignored and not d.startswith('.wit')]
 
-            # התעלמות מקבצים שמתחילים ב-.wit או שמופיעים ב-witignore
-            if rel_path.startswith('.wit') or is_ignored(rel_path):
+        for f in files:
+            full_path = os.path.join(root, f)
+            rel_path = os.path.relpath(full_path, BASE_PATH)
+
+            if rel_path.startswith('.wit') or any(p in ignored for p in rel_path.split(os.sep)):
                 continue
 
-            staged_file_path = join(staged_dir, rel_path)
-            commit_file_path = join(last_commit, rel_path) if last_commit else None
+            staged_path = os.path.join(STAGED_DIR, rel_path)
+            commit_path = os.path.join(commit_files_path, rel_path) if commit_files_path else None
 
-            if exists(staged_file_path):
-                if commit_file_path and exists(commit_file_path):
-                    if not if_files_equal(staged_file_path, commit_file_path):
-                        staged_changes.append(rel_path)
-                else:
+            # 1. בדיקת Stage מול Commit
+            if os.path.exists(staged_path):
+                if not commit_path or not os.path.exists(commit_path) or not compare_files(staged_path, commit_path):
                     staged_changes.append(rel_path)
 
-                # בדיקה אם שונה מאז שנוסף ל-stage
-                if not if_files_equal(path, staged_file_path):
+                # 2. בדיקת עבודה מול Stage
+                if not compare_files(full_path, staged_path):
                     modified_not_staged.append(rel_path)
             else:
-                # לא ב-stage ולא ב-commit → untracked
-                if not commit_file_path or not exists(commit_file_path):
+                # 3. בדיקת Untracked (או שונה מהקומיט האחרון)
+                if not commit_path or not os.path.exists(commit_path):
                     untracked_files.append(rel_path)
+                elif not compare_files(full_path, commit_path):
+                    modified_not_staged.append(rel_path)
 
-    # הדפסה מסודרת
-    print("Staged but not committed:", sorted(staged_changes))
-    print("Modified but not staged:", sorted(modified_not_staged))
-    print("Untracked files:", sorted(untracked_files))
+    print(f"\n--- STATUS  ---")
+    print(f"Changes to be committed: {sorted(staged_changes) if staged_changes else 'None'}")
+    print(f"Changes not staged:      {sorted(modified_not_staged) if modified_not_staged else 'None'}")
+    print(f"Untracked files:         {sorted(untracked_files) if untracked_files else 'None'}\n")
