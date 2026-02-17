@@ -1,59 +1,56 @@
- ## פרטים ID וכו ע"י פונקציות נוספות ומכניסה תיקייה חדשה עם הקבצים עם השינויים"#
-# #יוצR HEAD שמצביע על הCOMMIT האחרון המשתנה יהיה מצביע על כל השמות
-#
-#vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# def create_commit(message):
-#     if not os.path.exists('.wit/staged_file'):
-#         print("you need to do add Command before commit and chek if you did git init")
-#         return
-#
-#     commit_id = get_commit_id()
-#     print(commit_id)
-#     os.makedirs(f".wit/commits/{commit_id}/files", exist_ok=True)
-#     source = '.wit/staged_file'
-#     dest = fr".wit/commits/{commit_id}/files"
-#     shutil.copytree(source, dest)
-#     os.makedirs(f".wit/commits/{commit_id}/details.txt")
-#     with open(f".wit/commits/{commit_id}/details.txt", "w") as details_file:
-#         details_file.write(f"Date: {datetime.datetime.now()}\n")
-#         details_file.write(f"Message: {message}\n")
-#
-#
-# def get_commit_id():
-#     return str(uuid.uuid4())[:8]  # לקחת רק 8 תווים ראשונים
-#   # יצירת מזהה ייחודי
 import os
 import shutil
 import datetime
 import uuid
+import files_func
 
 
 def create_commit(message):
-    if not os.path.exists('.wit/staged_file'):
-        print("You need to use the 'add' command before commit and check if you did 'git init'.")
+    staged_path = '.wit/staged_file'
+    head_file = ".wit/commits/head.txt"
+
+    # 1. בדיקה אם התיקייה קיימת ויש בה קבצים
+    if not os.path.exists(staged_path) or not os.listdir(staged_path):
+        print("Error: Nothing to commit. Use 'add' first.")
         return
 
-    commit_id = get_commit_id()
-    print(f"Commit ID: {commit_id}")
+    # 2. בדיקה האם היו שינויים מהקומיט האחרון (דרישת חובה בפרויקט)
+    if os.path.exists(head_file):
+        with open(head_file, "r", encoding="utf-8") as f:
+            last_commit_id = f.read().strip()
 
-    commit_path: str = f".wit/commits/{commit_id}"
+        if last_commit_id:  # אם זה לא הקומיט הראשון
+            last_commit_files = f".wit/commits/{last_commit_id}/files"
+            # השוואה בין מה שיש עכשיו בסטייג' למה שיש בקומיט האחרון
+            if files_func.if_folders_equals(staged_path, last_commit_files):
+                print("No changes detected since last commit. Commit aborted.")
+                return
+
+    # 3. יצירת מזהה ייחודי ונתיבים
+    commit_id = get_commit_id()
+    commit_path = f".wit/commits/{commit_id}"
     os.makedirs(f"{commit_path}/files", exist_ok=True)
 
-    source = '.wit/staged_file'
-    dest = f"{commit_path}/files"
+    # 4. העתקת הקבצים מהסטייג' לקומיט החדש
+    # שים לב: אנחנו מעתיקים מ-staged_file לתיקיית ה-files של הקומיט
+    files_func.copy_files(staged_path, f"{commit_path}/files")
 
-    if os.path.exists(dest):
-        shutil.rmtree(dest)  # מחיקת תיקיית יעד אם היא קיימת
+    # 5. יצירת קובץ details.txt עם התאריך וההודעה
+    with open(f"{commit_path}/details.txt", "w", encoding="utf-8") as details:
+        details.write(f"Date: {datetime.datetime.now()}\n")
+        details.write(f"Message: {message}\n")
 
-    shutil.copytree(source, dest)
+    # 6. עדכון ה-HEAD שיצביע על הקומיט החדש
+    with open(head_file, "w", encoding="utf-8") as head:
+        head.write(commit_id)
 
-    # יצירת קובץ details.txt
-    with open(f"{commit_path}/details.txt", "w", encoding="utf-8") as details_file:
-        details_file.write(f"Date: {datetime.datetime.now()}\n")
-        details_file.write(f"Message: {message}\n")
-    with open(".wit/commits/head.txt", "w", encoding="utf-8") as details_file:
-        details_file.write(os.path.basename(commit_path))
+    # 7. ניקוי הסטייג'ינג לאחר הקומיט
+    files_func.remove_path(staged_path)
+    # יצירה מחדש של התיקייה הריקה כדי שה-add הבא לא יכשל
+    os.makedirs(staged_path, exist_ok=True)
+
+    print(f"Successfully created commit: {commit_id}")
 
 
 def get_commit_id():
-    return str(uuid.uuid4())[:8]  # לקיחה של 8 תווים ראשונים מהמזהה הייחודי
+    return str(uuid.uuid4())[:8]

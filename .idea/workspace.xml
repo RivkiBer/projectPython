@@ -5,44 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f7235e3-2278-45ec-8c06-7c8bc549bb56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/wit/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/commits/f800f202/details.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/commits/f800f202/files/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wit/.wit/commits/f800f202/files/status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wit/wit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projectPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectPython.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.idea/wit.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/.witignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/.witignore.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/.idea/wit.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/add.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/checkout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/commit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/commit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/.idea/wit.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/wit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/.wit/staged_file/wit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/.witignore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f800f202/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f800f202/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/f800f202/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/commits/head.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/details.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/.wit/staged_file/wit.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/add.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wit/files/.idea/wit.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/checkout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/commit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/commit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/commit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/files_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files/wit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wit/files_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/files_func.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/init.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wit/wit.py" beforeDir="false" afterPath="$PROJECT_DIR$/wit/wit.py" afterDir="false" />
@@ -52,9 +53,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chanyrubinsky&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RivkiBer/projectPython.git&quot;,
+    &quot;accountId&quot;: &quot;87109348-5e8f-48ab-9a65-cb475f533584&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -68,15 +88,43 @@
   "keyToString": {
     "Python.add.executor": "Run",
     "Python.checkout.executor": "Run",
+    "Python.commit.executor": "Run",
+    "Python.setup.executor": "Run",
     "Python.status.executor": "Run",
     "Python.wit.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging chany2",
-    "last_opened_file_path": "C:/projectPython",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/python/projectPython",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="projectPython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (wit)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -94,16 +142,5 @@
       <updated>1771190658394</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wit/wit.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
