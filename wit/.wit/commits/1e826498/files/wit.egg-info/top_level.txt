@@ -1,7 +1,0 @@
-add
-checkout
-commit
-files_func
-init
-status
-wit
