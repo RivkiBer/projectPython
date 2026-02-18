@@ -1,5 +1,0 @@
-.idea
-.vscode
-.gitignore
-__pycache__
-details.txt
